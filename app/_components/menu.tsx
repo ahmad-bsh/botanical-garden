@@ -13,12 +13,16 @@ export const Menu: React.FC = () => {
           </div>
         </div>
         <div className="absolute inset-0">
-          <div className="text-white pt-16 md:pt-20 text-4xl md:text-4xl text-center text-green-100">
+          <div className="pt-16 md:pt-20 text-4xl md:text-4xl text-center text-green-100">
             Menu
           </div>
           <div className="mt-10 flex flex-col space-y-5 md:text-xl items-center">
             {menuItems.map((item) => (
-              <div className="cursor-pointer text-green-200 hover:text-white">{item}</div>
+              <div
+                key={item}
+                className="cursor-pointer text-green-200 hover:text-white">
+                {item}
+              </div>
             ))}
             <div className="border-2 border-green-200 text-green-200 hover:text-white px-5 py-2.5 cursor-pointer hover:border-white">
               MEMBERSHIP
