@@ -1,5 +1,4 @@
 "use client"
-import { useState } from "react"
 import Image from "next/image"
 import { useHeaderContext } from "../_hooks/header-context"
 
@@ -9,8 +8,10 @@ export const Header: React.FC = () => {
   return (
     <header className="h-20 lg:h-24 w-full flex justify-between max-w-7xl mx-auto items-center z-0">
       <div className="ml-3 flex space-x-2 lg:space-x-2.5">
-        <div className="w-12 h-12 lg:w-16 lg:h-16 relative">
+        <div className="w-12 lg:w-16 aspect-square relative">
+          <div className="absolute aspect-square w-full">
           <Image src={"/logo.png"} alt="" fill className="rounded-full" />
+          </div>
         </div>
 
         <div className="flex justify-center items-center">
