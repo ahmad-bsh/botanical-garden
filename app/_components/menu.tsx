@@ -5,7 +5,7 @@ import { useHeaderContext } from "../_hooks/header-context"
 export const Menu: React.FC = () => {
   const { isMenuOpen, menuItems } = useHeaderContext()
   return isMenuOpen ? (
-    <div className="lg:hidden absolute inset-0 bg-green-900 z-10">
+    <div className="lg:hidden absolute inset-0 bg-green-900 z-10 h-screen">
       <div className="relative h-screen">
         <div className="absolute bottom-0 right-0 w-1/2 h-1/2 bg-green-900 opacity-10 z-0">
           <div className="absolute inset-0">
