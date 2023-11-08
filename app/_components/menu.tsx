@@ -1,9 +1,11 @@
 "use client"
 import Image from "next/image"
 import { useHeaderContext } from "../_hooks/header-context"
+import { useRouter } from "next/navigation"
 
 export const Menu: React.FC = () => {
-  const { isMenuOpen, menuItems } = useHeaderContext()
+  const router = useRouter()
+  const { isMenuOpen, setMenuOpen, menuItems } = useHeaderContext()
   return isMenuOpen ? (
     <div className="lg:hidden absolute inset-0 bg-green-900 z-10 h-screen">
       <div className="relative h-screen">
@@ -19,6 +21,10 @@ export const Menu: React.FC = () => {
           <div className="mt-10 flex flex-col space-y-5 md:text-xl items-center">
             {menuItems.map((item) => (
               <div
+                onClick={() => {
+                  router.push('/')
+                  setMenuOpen(false)
+                }}
                 key={item}
                 className="cursor-pointer text-green-200 hover:text-white">
                 {item}

@@ -4,6 +4,7 @@ import "./globals.css"
 import { Footer, Header } from "./_components"
 import { HeaderContextProvider } from "./_hooks"
 import { Menu } from "./_components/menu"
+import { ContentWrapper } from "./_components/content-wrapper"
 
 const inter = Inter({ subsets: ["latin"] })
 
@@ -19,12 +20,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} relative min-h-screen`}>
+      <body className={`${inter.className} relative`}>
         <HeaderContextProvider>
-          <Menu/>
+          <Menu />
           <Header />
-          <>{children}</>
-          <Footer/>
+          <ContentWrapper>
+            <>{children}</>
+            <Footer />
+          </ContentWrapper>
         </HeaderContextProvider>
       </body>
     </html>
