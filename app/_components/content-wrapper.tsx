@@ -6,5 +6,5 @@ export const ContentWrapper: React.FC<{
   children: React.ReactNode
 }> = ({ children }) => {
   const { isMenuOpen } = useHeaderContext()
-  return !isMenuOpen ? <div>{children}</div> : <></>
+  return !isMenuOpen ? <div className="mt-20 lg:mt-24">{children}</div> : <></>
 }
