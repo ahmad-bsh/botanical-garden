@@ -10,7 +10,7 @@ export const Header: React.FC = () => {
       className={`h-20 lg:h-24 w-full z-10 fixed ${
         isMenuOpen ? "bg-green-900" : "bg-white"
       } top-0`}>
-      <div className="absolute h-full w-full max-w-7xl mx-auto flex justify-between items-center">
+      <div className="absolute h-full w-full inset-0 max-w-7xl mx-auto flex justify-between items-center">
         <div className="ml-3 flex space-x-2 lg:space-x-2.5 ">
           {!isMenuOpen ? (
             <>
