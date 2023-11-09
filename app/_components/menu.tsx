@@ -15,7 +15,7 @@ export const Menu: React.FC = () => {
           </div>
         </div>
         <div className="absolute inset-0">
-          <div className="pt-16 md:pt-20 text-4xl md:text-4xl text-center text-green-100">
+          <div className="pt-20 md:pt-24 text-4xl md:text-4xl text-center text-green-100">
             Menu
           </div>
           <div className="mt-10 flex flex-col space-y-5 md:text-xl items-center">
