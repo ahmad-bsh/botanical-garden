@@ -1,10 +1,7 @@
-"use client"
-import Image from "next/image"
-import { useHeaderContext } from "../_hooks"
+"use client";
+import Image from "next/image";
 
 export const Footer: React.FC = () => {
-  const { menuItems } = useHeaderContext()
-
   return (
     <div className="bg-green-900 flex flex-col  text-white">
       <div className="max-w-7xl w-full mx-auto px-2 sm:px-5 xl:px-0 py-12 sm:py-16">
@@ -31,7 +28,7 @@ export const Footer: React.FC = () => {
                 </div>
               </div>
             </div>
-            <div className="mt-5">
+            <div className="mt-5 text-center px-2 sm:text-left sm:px-0">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt
               facilisis nuncLorem ipsum dolor sit amet, consectetur adipiscing
               elit.
@@ -47,7 +44,9 @@ export const Footer: React.FC = () => {
               "Store",
               "Membership",
             ].map((item) => (
-              <div className="cursor-pointer" key={item}>{item}</div>
+              <div className="cursor-pointer" key={item}>
+                {item}
+              </div>
             ))}
           </div>
           <div className="flex flex-col items-center sm:items-start">
@@ -84,5 +83,5 @@ export const Footer: React.FC = () => {
         © 2021 Mist Gardens. All rights reserved.
       </div>
     </div>
-  )
-}
+  );
+};

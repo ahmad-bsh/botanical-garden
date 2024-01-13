@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from "next/image";
 
 export const Discover: React.FC = () => {
   return (
@@ -30,7 +30,7 @@ export const Discover: React.FC = () => {
           <div className="text-2xl sm:text-3xl text-center md:text-left max-w-[26rem]">
             Discover yourself with nature
           </div>
-          <div className="sm:text-xl xl:text-2xl text-center md:text-left max-w-[26rem]">
+          <div className="sm:text-xl xl:text-2xl text-center md:text-left max-w-[26rem] px-1.5 sm:px-0">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem
             minima impedit quibusdam, eveniet perspiciatis id repudiandae
             laboriosam laborum hic.
@@ -53,5 +53,5 @@ export const Discover: React.FC = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};

@@ -1,10 +1,10 @@
-import Image from "next/image"
+import Image from "next/image";
 
 export const Hero: React.FC = () => {
   return (
-    <div className="min-h-[calc((100vh-5rem))] lg:min-h-[calc((100vh-6rem))] flex flex-col">
+    <div className="min-h-[calc((100vh-5rem))] lg:min-h-[calc((100vh-6rem))] flex flex-col pb-5">
       <div className="flex-1 h-full w-full grid grid-cols-1 lg:grid-cols-2 max-w-7xl mx-auto gap-5 xl:gap-0">
-        <div className="flex flex-col justify-center items-center lg:items-start text-green-800 lg:px-5 xl:px-0 space-y-2 lg:space-y-3.5 xl:space-y-5 pt-5 xl:pt-0">
+        <div className="flex flex-col justify-center items-center lg:items-start text-green-800 lg:px-5 2xl:px-0 space-y-2 lg:space-y-3.5 xl:space-y-5 pt-5 xl:pt-0">
           <div className="text-4xl sm:text-5xl xl:text-6xl text-center lg:text-left max-w-[33rem]">
             A beautiful adventure awaits
           </div>
@@ -39,5 +39,5 @@ export const Hero: React.FC = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
